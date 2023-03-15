@@ -1,0 +1,10 @@
+.relative{
+    position: absolute;
+    border: 3px solid coral;
+    left: 30px;
+}
+
+.para{
+    position: absolute;
+    margin-top: 50px;
+}

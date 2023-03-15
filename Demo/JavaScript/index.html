@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+<h1>JavaScript</h1>
+
+<script>
+  console.log("=============Data Types ============");
+  let String = "Pranesh Chakma";
+  console.log(String);
+  let number = 100.00;
+  let boolean = true;
+  let undefine;
+  let x;
+  console.log(x);
+  let object = {}
+
+
+  // An Object
+
+  const person = {Name: "Pranesh", Address: "Moratuwa"}
+  console.log(person);
+
+  //An Array Object
+  const village = [{Name: "Pranesh", Address: "Moratuwa"},{Name: "Pranesh", Address: "Moratuwa"}] //Object array
+  console.log(village);
+  const  clz = ["Pranesh", "Suchinta"]; //String array
+  console.log(clz);
+  const int = [100,101,102,103]; //int array
+  console.log(int);
+
+
+  //If
+  const mark = 30;
+  if(mark>60){
+      console.log("Campus");
+  }
+
+  //Else
+  if(mark>60) {
+      console.log("Campus");
+  }else{
+      console.log("Job")
+
+  }
+
+
+  console.log("============Switch==========")
+  let i = 2; // This value can be change (i=0, i=1, i=2)
+  let result;
+  switch (i){
+      case 0:
+         result = "Off";
+        break;
+      case 1:
+        result = "On";
+        break;
+      default:
+          result = "Not Value.....!";
+  }
+  console.log(result);
+
+/////////////////Today////////////////
+  console.log(new Date().getDate());
+
+
+  let today;
+  let day = new Date().getDate();
+  switch (day){
+      case 0:
+          today = "Sunday";
+          break;
+      case 1:
+          today = "Monday";
+          break;
+      case 2:
+          today = "Tuesday";
+          break;
+      case 3:
+          today = "Wednesday";
+          break;
+      case 4:
+          today = "Thursday";
+          break;
+      case 5:
+          today = "Friday";
+          break;
+      case 6:
+          today = "Saturday";
+          break;
+      default:
+          today = "No Day found...!";
+  }
+  console.log(today);
+
+
+  ////////////////Week days and weekend
+  let week;
+  switch (day){
+      case 0:
+      case 6:
+          week = "This is weekend!";
+          break;
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+          week = "This is week days!";
+          break;
+      default:
+          week = "Invalid day!"
+  }
+  console.log(week);
+
+  console.log("=================For Loop============");
+  for(let b=0; b<6; b++){
+      console.log("The number is " + b);
+  }
+
+  //Method 01 to print cars
+  const cars = ["BMW", "Volvo", "Audi", "BMW-i8"];
+  for (let i=0; i<cars.length; i++){
+      console.log("This car is "+cars[i]);
+
+  }
+
+  console.log("======Mathod 02 print cars======")
+  //Method 02 to print cars
+  let q = 0;
+  for ( ;q<cars.length;){
+      console.log(cars[q]);
+      q++
+
+  }
+
+  console.log("======For In========")
+  for(let h in cars){
+      console.log(cars[h]);
+
+  }
+
+  console.log("======For Of========")
+  for (let j of cars){
+      console.log(j);
+
+  }
+
+
+  /*console.log("======While========")
+  let k = 0;
+  while (k <cars.length){
+      console.log(cars[k]);
+      k++;
+
+  }*/
+
+
+  console.log("======Do While========")
+
+  let o = 0;
+  do{
+      console.log("APWD");
+      o++;
+  }while (o<0);
+
+
+  console.log("==========Object===========");
+
+  var car = {
+      name : "Fait",
+      model: "BMW",
+      stop: function (){
+          console.log("===> Stop! ");
+      }
+  }
+  const person1 = {
+      name: "Pranesh Chakma",
+      weight: "70KG",
+      skincolor: "White",
+      run: function (){
+          console.log("Runing....!");
+      }
+  }
+  console.log(car);
+  console.log(car.model);
+  console.log(person1);
+  console.log(person1.skincolor);
+
+  console.log("===============Array==============");
+  // Array
+  const persons = ["Pranesh Chakma", "Sukhi Chakma", "Sucinta Chakma"];
+
+  console.log(persons[0]);
+
+  const sample = [];
+  sample[0] =  "Hello";
+  sample[1] = "World";
+
+  console.log(sample);
+  console.log(sample[0]);
+  console.log(persons.length);
+
+
+  // Push
+  const fruits = ["Banana", "Apple"];
+  console.log(fruits.toString());
+
+  fruits.push("PineApple");
+  console.log(fruits.toString());
+
+  fruits.push("Orange");
+  console.log(fruits.toString());
+
+
+  //pop
+  const cars1 = ["BMW", "Audi", "Lambogini"];
+  console.log(cars1.toString());
+
+  cars1.pop();
+  console.log(cars1.toString());
+
+  //Unshift
+  const fruits1 = ["Apple", "Orange", "Banana"];
+  console.log(fruits1.toString());
+
+  fruits1.unshift("PineApple");
+  console.log(fruits1.toString());
+
+  fruits1.unshift("Dilum");
+  console.log(fruits1.toString());
+
+
+  //Shift
+  const fruits2 = ["Apple", "Orange", "Banana"];
+  console.log(fruits2.toString());
+
+  fruits2.shift();
+  console.log(fruits2.toString());
+
+
+
+  console.log("=======Functions========");
+  function callAlert(text){
+      //code
+      console.log(text);
+  }
+  callAlert("Pranesh");
+  callAlert("Sukhi");
+
+  function numberPlus(num1,num2){
+      const total3 = num1+num2;
+      return total3;
+  }
+  const tot = numberPlus(12,12);
+  console.log(tot);
+
+  const tot1 = numberPlus(30,30,30);
+  console.log(tot1);
+
+
+</script>
+
+
+</body>
+</html>

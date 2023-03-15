@@ -1,0 +1,18 @@
+body{
+    background-color: blueviolet;
+}
+.button{
+    background-color: blue;
+    padding: 15px 30px;
+    color: yellow;
+    border: 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+    body{
+        background-color: cornflowerblue;
+    }
+    button{
+        background-color: chartreuse;
+    }
+
+}

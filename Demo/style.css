@@ -1,0 +1,122 @@
+#title{
+    background-color: black;
+    color: yellow;
+    font-size: 100px;
+}
+
+
+/*Style Standards*/
+.model-content{
+
+}
+
+.card-contaier{
+    cursor: pointer;
+    height: 150px;
+    margin-top: 50px;
+    position: relative;
+    width: 150px;
+    background-color: aqua;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.img{
+    width: 100%;
+    height: 150px;
+}
+
+.card .aside{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+.card .aside-back{
+    background-color: yellow;
+    color: black;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+
+/*Animation*/
+
+@keyframes slide {
+    0% {
+        left: 0;
+        top: 0;
+    }
+    20%{
+        left: 250px;
+        top: 100px;
+    }
+    50%{
+        left: 500px;
+        top: 0;
+    }
+    75%{
+        left: 250px;
+        top: 100px;
+    }
+    100% {
+        left: 0;
+        top: 0;
+    }
+
+}
+.stage{
+    background-color: blueviolet;
+    border-radius: 5px;
+    height: 150px;
+    position: relative;
+    min-width: 500px;
+}
+
+.ball{
+    background-color: yellow;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+}
+
+.stage:hover .ball{
+    animation: slide 2s linear;
+}
+
+.content{
+    background-color: cornflowerblue;
+    margin-top: 150px;
+}
+.box-content{
+    background-color: blueviolet;
+    margin: 75px;
+    border: 10px solid coral;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+

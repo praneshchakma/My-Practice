@@ -1,0 +1,85 @@
+.flex-container-row{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex-container-row > div{
+    background-color: #50e5ff;
+    margin: 10px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.flex-container-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.flex-container-row-reverse > div{
+    background-color: #50e5ff;
+    margin: 10px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-container-column > div{
+    background-color: #50e5ff;
+    margin: 10px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.flex-container-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #819294;
+    height: 500px;
+
+}
+
+.flex-container-column-reverse > div{
+    background-color: #50e5ff;
+    margin: 10px;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.flex-container-wrap{
+    display: flex;
+    background-color: #4ae3ad;
+    flex-wrap: wrap;
+
+
+}
+
+.flex-container-wrap > div{
+    background-color: #50e5ff;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.flex-container-center{
+    display: flex;
+    background-color: #3378f3;
+    justify-content: center;
+
+
+}
+
+.flex-container-center > div{
+    background-color: #50e5ff;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+}
